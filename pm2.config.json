@@ -1,0 +1,14 @@
+{
+	"apps": {
+		"name": "koa-blog-server",
+		"script": "bin/www",
+		"// watch": "开发环境可以开watch，prod设置为false",
+		"watch": false,
+		"// instance": "进程个数",
+		"instances": 4,
+		"err_file": "logs/err.log",
+		"out_file": "logs/out.log",
+		"// log_data_format": "log时间戳格式",
+		"log_date_format": "YYYY-MM-DD HH:mm:ss"
+	}
+}

@@ -1,0 +1,3 @@
+2021-07-09 19:08:55: GET /user/err-test - 1ms
+2021-07-09 19:08:58: GET /err-test - 2ms
+2021-07-09 19:09:00: GET /users - 3ms

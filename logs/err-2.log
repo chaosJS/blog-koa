@@ -1,0 +1,47 @@
+2021-07-09 19:09:21: server error Error: /err-test 出现错误
+    at /Users/lichao/projects/blog-koa/routes/users.js:48:8
+    at dispatch (/Users/lichao/projects/blog-koa/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/lichao/projects/blog-koa/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/lichao/projects/blog-koa/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/lichao/projects/blog-koa/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/lichao/projects/blog-koa/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/lichao/projects/blog-koa/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/lichao/projects/blog-koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/lichao/projects/blog-koa/node_modules/koa-router/lib/router.js:332:32)
+    at dispatch (/Users/lichao/projects/blog-koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/lichao/projects/blog-koa/app.js:66:8
+    at dispatch (/Users/lichao/projects/blog-koa/node_modules/koa-compose/index.js:42:32)
+    at views (/Users/lichao/projects/blog-koa/node_modules/koa-views/src/index.js:91:12)
+    at dispatch (/Users/lichao/projects/blog-koa/node_modules/koa-compose/index.js:42:32)
+    at serve (/Users/lichao/projects/blog-koa/node_modules/koa-static/index.js:53:15)
+    at async bodyParser (/Users/lichao/projects/blog-koa/node_modules/koa-bodyparser/index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/users/err-test',
+    header: {
+      host: 'localhost:9000',
+      connection: 'keep-alive',
+      'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
+      'sec-ch-ua-mobile': '?0',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      'sec-fetch-site': 'none',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-user': '?1',
+      'sec-fetch-dest': 'document',
+      'accept-encoding': 'gzip, deflate, br',
+      'accept-language': 'zh-CN,zh;q=0.9'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'production' },
+  originalUrl: '/users/err-test',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}

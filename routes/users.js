@@ -43,4 +43,8 @@ router.get('/login-test', function (ctx, next) {
 		},
 	};
 });
+router.get('/err-test', function (ctx, next) {
+	// 模拟出错 pm2 重启保证其他代码正常
+	throw new Error('/err-test 出现错误');
+});
 module.exports = router;
